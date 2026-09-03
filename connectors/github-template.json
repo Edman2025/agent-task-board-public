@@ -1,0 +1,18 @@
+{
+  "source": "github",
+  "events": [
+    {
+      "id": "gh-pr-123-open",
+      "type": "task_created",
+      "agent": { "id": "github-bot", "name": "github-bot", "type": "integration", "status": "online" },
+      "task": { "id": "gh-pr-123", "title": "PR #123 opened", "agent_id": "github-bot", "priority": "medium", "status": "ready", "assignee": "github-bot" }
+    },
+    {
+      "id": "gh-pr-123-ci-fail",
+      "type": "status_changed",
+      "task_id": "gh-pr-123",
+      "to_status": "blocked",
+      "actor": "github-actions"
+    }
+  ]
+}

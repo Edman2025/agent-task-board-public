@@ -1,0 +1,18 @@
+{
+  "source": "jira",
+  "events": [
+    {
+      "id": "jira-PROJ-9-created",
+      "type": "task_created",
+      "agent": { "id": "jira-sync", "name": "jira-sync", "type": "integration", "status": "online" },
+      "task": { "id": "PROJ-9", "title": "用户无法登录", "agent_id": "jira-sync", "priority": "high", "status": "backlog", "assignee": "jira-sync" }
+    },
+    {
+      "id": "jira-PROJ-9-inprogress",
+      "type": "status_changed",
+      "task_id": "PROJ-9",
+      "to_status": "running",
+      "actor": "jira-webhook"
+    }
+  ]
+}

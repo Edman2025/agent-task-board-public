@@ -1,0 +1,7 @@
+node_modules/
+.env
+data/auth-tokens.json
+data/alert-channels.json
+data/connector-mappings.json
+data/cron-jobs.json
+*.db

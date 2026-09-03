@@ -1,0 +1,372 @@
+body {
+  margin: 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: #101828;
+  background: #f8fafc;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+h1,
+h2 {
+  margin: 0 0 16px;
+}
+
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+#btn-open-settings,
+#btn-close-settings {
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  background: #fff;
+  padding: 6px 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.settings-panel {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 14px;
+}
+
+.settings-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.session-info {
+  margin: -6px 0 14px;
+  font-size: 12px;
+  color: #475467;
+}
+
+.alerts {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.alert {
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 13px;
+}
+
+.alert.ok {
+  background: #ecfdf3;
+  border: 1px solid #abefc6;
+}
+
+.alert.medium {
+  background: #fffaeb;
+  border: 1px solid #fedf89;
+}
+
+.alert.high {
+  background: #fef3f2;
+  border: 1px solid #fecdca;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.metric-card {
+  background: white;
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.metric-card .label {
+  font-size: 12px;
+  color: #667085;
+}
+
+.metric-card .value {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 4px;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr auto;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.filters input,
+.filters select,
+.filters button {
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 13px;
+}
+
+.alert-config {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.alert-config input,
+.alert-config button {
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  padding: 6px 8px;
+  font-size: 12px;
+}
+
+.inline-message {
+  min-height: 18px;
+  font-size: 12px;
+  color: #344054;
+}
+.inline-message.ok {
+  color: #027a48;
+}
+.inline-message.error {
+  color: #b42318;
+}
+
+.sla-actions {
+  margin-bottom: 8px;
+  display: flex;
+  gap: 6px;
+}
+
+.sla-actions button {
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  background: #fff;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.summary-actions {
+  margin-bottom: 8px;
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.summary-actions select,
+.summary-actions button {
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  background: #fff;
+  padding: 6px 10px;
+  font-size: 12px;
+}
+
+.pager {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.pager button {
+  border: 1px solid #d0d5dd;
+  border-radius: 8px;
+  background: #fff;
+  padding: 4px 8px;
+  font-size: 12px;
+}
+
+.kanban {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(140px, 1fr));
+  gap: 12px;
+  overflow-x: auto;
+  margin-bottom: 24px;
+}
+
+.column {
+  background: #eef2ff;
+  border-radius: 10px;
+  padding: 10px;
+  min-height: 220px;
+  border: 1px dashed transparent;
+}
+
+.column.drop-active {
+  border-color: #6366f1;
+  background: #e0e7ff;
+}
+
+.column h3 {
+  margin: 0 0 8px;
+  font-size: 14px;
+}
+
+.task-card {
+  width: 100%;
+  box-sizing: border-box;
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 8px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+.task-card.danger {
+  border-color: #fda29b;
+  background: #fff7f7;
+}
+
+.task-card.dragging {
+  opacity: 0.5;
+}
+
+.task-meta {
+  font-size: 12px;
+  color: #667085;
+  margin-top: 4px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border: 1px solid #e5e7eb;
+}
+
+th,
+td {
+  border-bottom: 1px solid #f1f5f9;
+  padding: 10px;
+  text-align: left;
+  font-size: 13px;
+}
+
+.drawer {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 360px;
+  height: 100vh;
+  background: white;
+  border-left: 1px solid #e5e7eb;
+  box-shadow: -4px 0 16px rgba(0, 0, 0, 0.08);
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+.close-btn {
+  float: right;
+  cursor: pointer;
+  color: #475467;
+}
+
+.status-actions {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 6px;
+}
+
+.status-actions button {
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  background: #fff;
+  padding: 6px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  main {
+    padding: 12px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  .header-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .metrics {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .metric-card .value {
+    font-size: 20px;
+  }
+
+  .filters {
+    grid-template-columns: 1fr;
+  }
+
+  .filters input,
+  .filters select,
+  .filters button {
+    width: 100%;
+  }
+
+  .alert-config {
+    flex-wrap: wrap;
+    align-items: stretch;
+  }
+
+  .alert-config strong {
+    width: 100%;
+  }
+
+  .alert-config input,
+  .alert-config button,
+  .alert-config label {
+    width: 100%;
+  }
+
+  .kanban {
+    grid-template-columns: 1fr;
+    overflow-x: visible;
+  }
+
+  .column {
+    min-height: 0;
+  }
+
+  section {
+    overflow-x: auto;
+  }
+
+  table {
+    min-width: 720px;
+  }
+
+  .drawer {
+    width: 100%;
+  }
+
+  .status-actions {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

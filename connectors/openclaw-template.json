@@ -1,0 +1,11 @@
+{
+  "source": "openclaw",
+  "events": [
+    {
+      "id": "oc-evt-1001",
+      "type": "task_created",
+      "agent": { "id": "a1", "name": "planner-agent", "type": "planning", "status": "online" },
+      "task": { "id": "t-10001", "title": "OpenClaw任务", "agent_id": "a1", "priority": "high", "status": "ready", "assignee": "planner-agent" }
+    }
+  ]
+}

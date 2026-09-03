@@ -1,0 +1,8 @@
+{
+  "defaultMinutes": 70,
+  "statusMinutes": {
+    "running": 70,
+    "blocked": 20,
+    "review": 120
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "agent-task-board",
+  "version": "0.3.0",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "db:clear": "node scripts/clear-db.js"
+  },
+  "dependencies": {
+    "node-cron": "^4.2.1",
+    "pg": "^8.12.0"
+  }
+}
